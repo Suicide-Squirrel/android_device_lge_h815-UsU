@@ -1,10 +1,7 @@
-# Inherit AOSCP common bits
-$(call inherit-product, vendor/cm/config/common.mk)
+# Inherit common bits
+$(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
-# Inherit telephony stuff
-$(call inherit-product, vendor/cm/config/telephony.mk)
-
-# Inherit AOSP device configuration for H815
+# Inherit device configuration for H815
 $(call inherit-product, device/lge/h815_usu/full_h815.mk)
 
 # Boot animation
