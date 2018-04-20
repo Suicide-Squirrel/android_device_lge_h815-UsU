@@ -1,2 +1,8 @@
 on early-fs
     mount_all fstab.h815
+
+on post-fs-data
+    # see system/core/rootdir/init.rc
+    # without this line encrypted filesystems won't work!
+    # Set indication (checked by vold) that we have finished this action
+    setprop vold.post_fs_data_done 1
