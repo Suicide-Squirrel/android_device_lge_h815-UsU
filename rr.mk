@@ -1,15 +1,14 @@
 # Inherit AOSP device configuration for H815
 $(call inherit-product, device/lge/h815_usu/full_h815.mk)
 
-# Inherit Lineage common bits
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
-
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2560
 TARGET_SCREEN_WIDTH := 1440
 
-# Setup device specific product configuration
-PRODUCT_NAME := lineage_h815_usu
+# Inherit some common stuff.
+$(call inherit-product, vendor/rr/config/common_full_phone.mk)
+
+PRODUCT_NAME := rr_h815_usu
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE="g4" \
