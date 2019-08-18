@@ -24,7 +24,7 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Init configuration
 PRODUCT_PACKAGES += \
-    fstab.h815 \
+    fstab.f500 \
     init.device.rc 
 
 # Gps
