@@ -32,10 +32,10 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Setup device specific product configuration
 # Set those variables here to overwrite the inherited values.
-PRODUCT_DEVICE := h815_usu
-PRODUCT_NAME := lineage_h815_usu
+PRODUCT_DEVICE := f500_usu
+PRODUCT_NAME := lineage_f500_usu
 PRODUCT_BRAND := lge
-PRODUCT_MODEL := LG-H815
+PRODUCT_MODEL := LG-f500
 PRODUCT_MANUFACTURER := LGE
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
